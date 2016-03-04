@@ -7,16 +7,20 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.pbuskell.helloworld.HelloWorld">
+    tools:context="com.example.pbuskell.helloworld.HelloWorld"
+    android:background="#ffffff">
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/strButtonCaption"
         android:id="@+id/btnSayHello"
-        android:layout_marginTop="91dp"
-        android:layout_centerHorizontal="true"
-        android:onClick="sayHello" />
+        android:onClick="sayHello"
+        android:background="#5692e6"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/txtOutput"
+        android:layout_alignEnd="@+id/txtOutput"
+        android:layout_marginTop="37dp" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -24,4 +28,15 @@
         android:id="@+id/txtOutput"
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/DifferentMessage"
+        android:id="@+id/strDiffMessage"
+        android:background="#6e86ce"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="85dp" />
+
 </RelativeLayout>
